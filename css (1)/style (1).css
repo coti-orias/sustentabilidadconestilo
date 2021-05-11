@@ -1,0 +1,279 @@
+/* Estilos NavBar */
+.menu {
+  font-size: 1em;
+  word-spacing: 50%;
+  font-weight: bold;
+  text-align: center; }
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap; }
+  ul li {
+    display: inline-block;
+    width: 10%;
+    font-size: 15px;
+    position: relative; }
+    ul li:hover {
+      display: block;
+      background-color: #FAAE7B;
+      color: white;
+      padding: 2px;
+      transform: scale(1, 1); }
+
+a {
+  text-decoration: none;
+  padding: 4px;
+  color: black; }
+  a:hover, a:active, a:focus {
+    text-decoration: none;
+    color: black; }
+
+@media all and (max-width: 600px) {
+  .menu > li {
+    flex-basis: 50%; } }
+
+@media all and (max-width: 400px) {
+  .menu > li {
+    flex-basis: 100%; }
+  .search {
+    order: 1; } }
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.iconosIndex {
+  height: 150px; }
+
+.logo {
+  width: 150px; }
+
+.perfil {
+  border-radius: 50%;
+  width: 200px;
+  padding: 20px;
+  margin: 50px; }
+
+.logoFooter {
+  width: 50px;
+  justify-content: center;
+  align-content: center; }
+
+.iconosDirectorioCard {
+  width: 30px; }
+
+.logosDirectorioCard {
+  width: 200px; }
+
+.styleThumbs {
+  width: 150px;
+  border-radius: 4px;
+  padding: 5px; }
+
+body {
+  font-family: 'Roboto', Helvetica, sans-serif; }
+
+.textoTitulo {
+  font-family: 'Playfair-Display', serif;
+  word-spacing: 3px;
+  color: white; }
+
+.textoSubtitulo {
+  color: #FAAE7B;
+  text-align: center; }
+
+.textoGris {
+  color: darkslategray; }
+
+.cabeceras {
+  font-family: 'Playfair-Display', serif;
+  text-align: center; }
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: space-evenly;
+  align-items: center; }
+
+h1 {
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold; }
+
+h2 {
+  font-size: 1.7em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold; }
+
+h3 {
+  font-weight: bold;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px; }
+
+.blockIndexText {
+  font-size: 1.17em;
+  text-align: center;
+  justify-content: center;
+  padding: 0%; }
+
+.parrafoDirectorio {
+  text-align: center; }
+
+form {
+  font-size: 12px; }
+
+.boton {
+  background-color: darkslategray;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px; }
+  .boton:hover {
+    background-color: #FAAE7B;
+    color: white;
+    border-radius: 8px; }
+
+.footer {
+  list-style-type: none;
+  font-family: sans-serif;
+  font-size: 1em;
+  margin-top: 50px; }
+
+.contenedor {
+  height: 100%; }
+
+.divSize {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+  align-items: center; }
+
+.imgSize {
+  display: flex;
+  border-radius: 10%; }
+
+.colorRosa {
+  padding: 10px;
+  overflow: hidden; }
+
+.textoManifiesto {
+  text-align: center; }
+
+/*.grillaPorQue {
+    display: grid;
+    grid-template-columns: 33vw 33vw 33vw;
+    grid-template-rows: repeat (5, 250 px);
+    justify-items: center;
+    align-items: center; 
+    grid-column-gap: 10px;
+    grid-template-areas: 
+                     "texto1 texto1 img1"
+                     "img2 texto2 texto2"
+                     "texto3 texto3 img3"
+                     "img4 texto4 texto4"
+              
+}
+
+#texto1 {
+    grid-area: texto1;
+} 
+
+#img1 {
+    grid-area: img1;
+} 
+
+#img2 {
+    grid-area: img2;
+} 
+
+#texto2 {
+    grid-area: texto2;
+} 
+
+#texto3 {
+    grid-area: texto3;
+} 
+
+#img3 {
+    grid-area: img3;
+} 
+
+#img4 {
+    grid-area: img4;
+} 
+
+#texto4 {
+    grid-area: texto4;
+} 
+
+#img5 {
+    grid-area: img5;
+}*/
+/* Estilos Index */
+.textCenter {
+  text-align: center;
+  justify-content: center;
+  padding: 10px; }
+
+/* Estilos Directorio */
+.border {
+  border: solid grey 3px;
+  margin: 0;
+  padding: 10px; }
+
+div.containerHR {
+  height: 100px;
+  width: 200px;
+  margin: 5px auto;
+  padding-top: 50px; }
+
+hr.beautiful-line {
+  border-top: 1px solid #999;
+  width: 90%; }
+
+.hrTop {
+  height: 2px;
+  border-width: 0;
+  color: gray;
+  background-color: gray; }
+
+.gradientPink {
+  display: flex;
+  background-image: linear-gradient(to right, #ffecd2 0%, #FAAE7B 100%); }
+
+.gradientPinkReverse {
+  background-image: linear-gradient(to left, #ffecd2 0%, #FAAE7B 100%); }
+
+.boxIndexAcciones {
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  align-self: center; }
+
+.categoriasMargin {
+  margin: 30px; }
+
+/*.waves{
+  background-image: url(/img/waves-svg.png);
+  background-size: cover;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}*/

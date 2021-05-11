@@ -1,0 +1,77 @@
+.contenedor{
+    height: 100%;
+  } 
+
+.divSize {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;  
+} 
+
+.imgSize {
+    display: flex;
+    border-radius: 10%;
+} 
+
+.colorRosa {
+    padding: 10px;
+    overflow: hidden;
+  } 
+
+.textoManifiesto {
+    text-align: center;
+      } 
+
+
+/*.grillaPorQue {
+    display: grid;
+    grid-template-columns: 33vw 33vw 33vw;
+    grid-template-rows: repeat (5, 250 px);
+    justify-items: center;
+    align-items: center; 
+    grid-column-gap: 10px;
+    grid-template-areas: 
+                     "texto1 texto1 img1"
+                     "img2 texto2 texto2"
+                     "texto3 texto3 img3"
+                     "img4 texto4 texto4"
+              
+}
+
+#texto1 {
+    grid-area: texto1;
+} 
+
+#img1 {
+    grid-area: img1;
+} 
+
+#img2 {
+    grid-area: img2;
+} 
+
+#texto2 {
+    grid-area: texto2;
+} 
+
+#texto3 {
+    grid-area: texto3;
+} 
+
+#img3 {
+    grid-area: img3;
+} 
+
+#img4 {
+    grid-area: img4;
+} 
+
+#texto4 {
+    grid-area: texto4;
+} 
+
+#img5 {
+    grid-area: img5;
+}*/

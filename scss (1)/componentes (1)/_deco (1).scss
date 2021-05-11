@@ -1,0 +1,45 @@
+div.containerHR
+{
+  height:100px;
+  width:200px;
+  margin:5px auto;
+  padding-top:50px;
+}
+hr.beautiful-line{
+ 	border-top: 1px solid #999; 
+  width: 90%;
+}
+
+.hrTop {
+  height:2px;
+  border-width:0;
+  color:gray;
+  background-color:gray
+}
+.gradientPink {
+    display: flex;
+    background-image: linear-gradient(to right, #ffecd2 0%, #FAAE7B 100%);
+}
+
+.gradientPinkReverse {
+background-image: linear-gradient(to left, #ffecd2 0%, #FAAE7B 100%);
+}
+
+.boxIndexAcciones {
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+}
+
+.categoriasMargin{
+  margin: 30px;
+}
+
+/*.waves{
+  background-image: url(/img/waves-svg.png);
+  background-size: cover;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}*/

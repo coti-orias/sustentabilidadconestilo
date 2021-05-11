@@ -1,0 +1,70 @@
+body {
+	font-family: 'Roboto', Helvetica, sans-serif;
+}
+
+.textoTitulo {
+    font-family: 'Playfair-Display', serif;
+    word-spacing: 3px;
+    color: white;
+}
+
+.textoSubtitulo {
+    color: #FAAE7B;
+    text-align: center;
+}
+
+.textoGris{
+    color: darkslategray;
+}
+
+
+.cabeceras {
+        font-family: 'Playfair-Display', serif;
+        text-align: center;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-evenly;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.7em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.blockIndexText {
+    font-size: 1.17em;
+    text-align: center;
+    justify-content: center;
+    padding: 0%;
+}
+
+.parrafoDirectorio {
+    text-align: center;
+}

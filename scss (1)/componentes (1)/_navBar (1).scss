@@ -1,0 +1,57 @@
+/* Estilos NavBar */
+
+.menu {
+	font-size: 1em;
+    word-spacing: 50%;
+    font-weight:bold;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+
+    li 	{
+        display: inline-block;
+        width: 10%;
+        font-size: 15px;
+        position: relative;
+
+        &:hover {
+            display: block;
+            background-color:#FAAE7B;
+            color: white;
+            padding: 2px;
+            transform: scale(1,1);
+        }
+    }
+}
+ a {
+	text-decoration: none;
+	padding: 4px;
+    color: black;
+
+    &:hover, &:active, &:focus {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+@media all and (max-width: 600px) {  
+    
+      .menu > li {  
+      flex-basis: 50%;  
+    }
+  
+  }
+
+  @media all and (max-width: 400px) {  
+    .menu > li {  
+      flex-basis: 100%;  
+    }  
+    .search {  
+      order: 1;  
+    }  
+  }
+
