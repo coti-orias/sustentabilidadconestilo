@@ -13,8 +13,8 @@ ul {
     flex-wrap: wrap;
 
     li 	{
-        display: inline-block;
-        width: 10%;
+        display: flex;
+        padding: left;
         font-size: 15px;
         position: relative;
 

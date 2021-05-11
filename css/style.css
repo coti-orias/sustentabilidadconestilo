@@ -10,8 +10,8 @@ ul {
   display: flex;
   flex-wrap: wrap; }
   ul li {
-    display: inline-block;
-    width: 10%;
+    display: flex;
+    padding: left;
     font-size: 15px;
     position: relative; }
     ul li:hover {
