@@ -150,10 +150,46 @@ form {
     border-radius: 8px; }
 
 .footer {
-  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100vw;
+  color: black;
+  margin-top: 25px; }
+
+#footer-contenedor-1 {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 200px;
+  text-align: left;
+  padding: 10px;
+  justify-content: left; }
+
+#footer-contenedor-2 {
+  width: 30%;
+  height: 200px;
+  text-align: left;
+  padding: 10px; }
+
+#footer-contenedor-3 {
+  width: 30%;
+  height: 200px;
+  text-align: left;
+  padding: 10px; }
+
+.footer-list {
   font-family: sans-serif;
   font-size: 1em;
-  margin-top: 50px; }
+  list-style-type: none;
+  text-align: left;
+  display: flex;
+  flex-direction: column; }
+
+.logoFooter {
+  width: 50px;
+  justify-content: center;
+  align-content: center;
+  padding: 5px; }
 
 .contenedor {
   height: 100%; }
