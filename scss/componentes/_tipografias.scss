@@ -3,7 +3,7 @@ body {
 }
 
 .textoTitulo {
-    font-family: 'Playfair-Display', serif;
+    font-family: 'Playfair Display', serif;
     word-spacing: 3px;
     color: white;
 }
@@ -19,7 +19,7 @@ body {
 
 
 .cabeceras {
-        font-family: 'Playfair-Display', serif;
+        font-family: 'Playfair Display', serif;
         text-align: center;
 }
 
@@ -41,7 +41,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.7em;
+    font-size: 2em;
     margin-block-start: 0.83em;
     margin-block-end: 0.83em;
     margin-inline-start: 0px;
@@ -73,3 +73,24 @@ h3 {
     color: white;
     font-size: 30px; 
 }
+
+#quote-text {
+    color: darkgray;
+    font-family: 'Playfair Display', serif;
+    font-weight: 300;
+    text-align: center;
+    font-size: 1.87em;
+}
+
+@media screen and (max-width: 600px) {
+    #quote-text {
+      font-size: 0.8em;
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+    #quote-text {
+      font-size: 0.8em;
+    }
+  }
+

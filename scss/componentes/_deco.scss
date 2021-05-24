@@ -43,3 +43,19 @@ background-image: linear-gradient(to left, #ffecd2 0%, #FAAE7B 100%);
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }*/
+
+.quoteBox {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+  height: 50vh;
+  background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+  padding: 15px;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#quote-center {
+  width: 50vw;
+}
