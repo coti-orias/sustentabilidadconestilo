@@ -4,7 +4,7 @@
     width: 100vw;
     color: black;
     margin-top: 25px;
-
+   
 }
 
 #footer-contenedor-1 {
@@ -51,4 +51,10 @@
     padding: 5px;
       }
 
+      @media only screen and (max-width: 320px) {
+        .footer {
+        display: flex;
+        flex-direction: column;
+        }
+    }
 
