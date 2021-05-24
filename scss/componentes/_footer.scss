@@ -1,13 +1,13 @@
 .footer {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     width: 100vw;
     color: black;
     margin-top: 25px;
    
 }
 
-#footer-contenedor-1 {
+/*#footer-contenedor-1 {
     display: flex;
     flex-direction: column;
     width: 30%;
@@ -32,9 +32,9 @@
     padding: 10px;
 
 }
+*/
 
-
-.footer-list {
+/*.footer-list {
     font-family: sans-serif;
 	font-size: 1em;
 	list-style-type: none;
@@ -42,13 +42,13 @@
     display: flex;
     flex-direction: column;
 
-}
+}*/
 
 .logoFooter {
-    width: 50px;
+    width: 60px;
     justify-content: center;
     align-content: center;
-    padding: 5px;
+    padding-right: 5px;
       }
 
       @media only screen and (max-width: 320px) {

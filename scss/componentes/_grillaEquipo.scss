@@ -12,16 +12,16 @@
 
 .imgSize {
     display: flex;
-    border-radius: 10%;
-} 
+    justify-content: center;
+ } 
 
-.colorRosa {
+.texto-equipo {
     padding: 10px;
     overflow: hidden;
   } 
 
-.textoManifiesto {
-    text-align: center;
+.texto-bio {
+    text-align: right;
       } 
 
 
