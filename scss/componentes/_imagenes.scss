@@ -25,12 +25,17 @@
   align-content: center;
 }
 
+.iconos-directorio {
+   width: 3vw;
+}
+
 .iconosDirectorioCard {
   width: 30px;
 }
 
 .logosDirectorioCard {
   width: 200px;
+  margin-bottom: 10px;
 }
 
 .styleThumbs {
@@ -38,6 +43,11 @@
   border-radius: 4px;
   padding: 5px;
 }
+
+.gallery-height {
+  height: 80vh;
+}
+
 
 
 

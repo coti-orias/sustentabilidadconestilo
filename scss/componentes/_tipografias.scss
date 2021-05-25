@@ -74,7 +74,7 @@ h3 {
     font-size: 30px; 
 }
 
-#quote-text {
+.quote-text {
     color: darkgray;
     font-family: 'Playfair Display', serif;
     font-weight: 300;
@@ -83,13 +83,13 @@ h3 {
 }
 
 @media screen and (max-width: 600px) {
-    #quote-text {
+    .quote-text {
       font-size: 0.8em;
     }
   }
 
   @media screen and (max-width: 320px) {
-    #quote-text {
+    .quote-text {
       font-size: 0.8em;
     }
   }
