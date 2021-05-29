@@ -41,18 +41,27 @@ ul {
 
 @media all and (max-width: 600px) {  
     
-      .menu > li {  
-      flex-basis: 50%;  
-    }
+    .menu > li {  
+      flex-basis: 50%;
+      display: flex;
+      padding: left;
+      font-size: 15px;
+      position: relative;
   
   }
+}
 
-  @media all and (max-width: 400px) {  
-    .menu > li {  
-      flex-basis: 100%;  
-    }  
-    .search {  
-      order: 1;  
-    }  
-  }
+  @media all and (max-width: 300px) {  
+        .search {  
+      order: 1;
+        } 
+
+    .menu > li { 
+      flex-basis: 100%; 
+      display: flex;
+      padding: left;
+      font-size: 15px;
+      position: relative;
+              }
+}
 
