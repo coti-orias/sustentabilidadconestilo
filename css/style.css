@@ -173,7 +173,9 @@ h3 {
   .cover-text {
     font-size: 0.7em;
     padding-top: 30px;
-    line-height: 0.5px; } }
+    line-height: 0.5px; }
+  .servicios {
+    text-align: center; } }
 
 @media screen and (max-width: 320px) {
   .quote-text {
@@ -181,7 +183,9 @@ h3 {
   .cover-text {
     font-size: 0.7em;
     padding-top: 30px;
-    line-height: 0.5px; } }
+    line-height: 0.5px; }
+  .servicios {
+    text-align: center; } }
 
 form {
   font-size: 12px; }
