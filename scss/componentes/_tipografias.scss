@@ -16,6 +16,7 @@ body {
 
 .textoGris{
     color: darkslategray;
+    text-align: center;
 }
 
 
@@ -48,6 +49,7 @@ h2 {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
+    text-align: center;
 }
 
 h3 {
@@ -58,6 +60,7 @@ h3 {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
+
 
 .blockIndexText {
     font-size: 1.17em;
@@ -72,7 +75,7 @@ h3 {
 
 .cover-text{
     color: white;
-    font-size: 30px; 
+    font-size: 20px; 
 }
 
 .quote-text {
@@ -87,11 +90,25 @@ h3 {
     .quote-text {
       font-size: 0.8em;
     }
+
+    .cover-text {
+        font-size: 0.7em;
+        padding-top: 30px;
+        line-height: 0.5px;
+    }
+  
   }
 
   @media screen and (max-width: 320px) {
     .quote-text {
       font-size: 0.8em;
+
+    }
+
+    .cover-text {
+        font-size: 0.7em;
+        padding-top: 30px;
+        line-height: 0.5px;
     }
   }
 

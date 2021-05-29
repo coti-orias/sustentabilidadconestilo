@@ -33,6 +33,19 @@
   width: 30px;
 }
 
+@media screen and (max-width: 320px) {
+  .iconos-directorio {
+    width: 10vw;
+ }
+}
+ 
+ @media screen and (max-width: 600px) {
+  .iconos-directorio {
+    width: 10vw;
+ }
+ 
+}
+
 .logosDirectorioCard {
   width: 200px;
   margin-bottom: 10px;
