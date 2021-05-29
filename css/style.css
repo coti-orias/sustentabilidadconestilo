@@ -84,7 +84,8 @@ body {
 .textoTitulo {
   font-family: 'Playfair Display', serif;
   word-spacing: 3px;
-  color: white; }
+  color: white;
+  text-decoration: center; }
 
 .textoSubtitulo {
   color: #FAAE7B;
