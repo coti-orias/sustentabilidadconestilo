@@ -4,80 +4,123 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Directorio</title>
+    <title>Sustentabilidad con Estilo</title>
+    <link rel="icon" type="image/png" href="img/favicon.png"/>
+    <meta name="description" content="Creando formas éticas y conscientes de consumir en Córdoba, con mucho estilo. Buscá marcas éticas, conocé las novedades de moda sostenible.">
 
-    <meta name="description" content="Buscá las marcas éticas cerca tuyo, y enterate de cómo hacer compras más conscientes.">
-
-   <meta name="keywords" content="mapa de marcas, directorio, córdoba, argentina, moda sostenible, moda ética, sustainable fashion, ethical fashion, moda circular, circular fashion">
+   <meta name="keywords" content="córdoba, argentina, moda sostenible, moda ética, sustainable fashion, ethical fashion, moda circular, circular fashion">
 
     <!--Start Bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
     <!--End Bootstrap-->
-    
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@100;300;400;600&family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
 <header>
-    <img src="img/Logo Sustentabilidad con Estilo.png" class="center logo" alt="Logo Sustentabilidad con Estilo">   
-    <h1 class="cabeceras flex">Directorio</h1> 
+        <!--------START MENU-------->
+        <nav class="navBar">
+            <div class="menu">
+                <a href="index.html"><img src="img/logo.png" class="logo" alt="Logo Sustentabilidad con Estilo">
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars fa-2x"></i>
+                    </a>
+                <div id="myLinks">
+                    <a href="equipo.html">EQUIPO</a>
+                    <a href="servicios.html">SERVICIOS</a>
+                    <a href="directorio.html" class="active">DIRECTORIO</a>
+                    <a href="https://medium.com/@sustentabilidadconestilo" target="blank">BLOG</a>  
+                    <!-- <a href="contacto.html">CONTACTO</a> -->
+                </div>
+            </div>
+      </nav>
 
-  <!--------START MENU-------->
-        <nav class="container-fluid">
-            <ul class="menu flex">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="equipo.html">EQUIPO</a></li>
-                <li><a href="servicios.html">SERVICIOS</a></li>
-                <li><a href="directorio.html">DIRECTORIO</a></li>
-                <li><a href="https://medium.com/@sustentabilidadconestilo" target="blank">BLOG</a></li>
-                <li><a href="contacto.html">CONTACTO</a></li>
-            </ul>
-        </nav>
   <!--------END MENU-------->
-
+    
 </header>
 
-<hr class="hrTop">
-
 <main>
-    <div>
-        <h2 class="textoSubtitulo flex">Descubre marcas éticas cerca tuyo</h2>
-    </div>
+        <h2 class="directorioTitlo flex">Descubre marcas éticas cerca tuyo</h2>
 
-    <p class="parrafoDirectorio"><strong>Identificamos los siguientes criterios para facilitar tu búsqueda de marcas</strong></p>
+    <p class="parrafoDirectorio">Identificamos los siguientes criterios para facilitar tu búsqueda de marcas</p>
 
     <!--CATEGORÍAS START-->
     <div class="categoriasMargin">
-    <div class="container-fluid">
+    <div id="myBtnContainer" class="container-fluid">
         <div class="row justify-content-center">
-            <div class="col-sm-2 justify-content-center">
-                <img src="img/planet-earth.png" class="iconos-directorio" alt="ícono planeta tierra">
-                <p class="textoGris">Telas Sustentables</p>
+            <div class="btn-container">
+                <button class="justify-content-center category-btn btn"  onclick="filterSelection('hechoMano')">
+                    <img src="img/knitted.png" class="iconos-directorio" alt="ícono hecho a mano">
+                    <p>Hecho a Mano</p>
+                </button>
             </div>
-            <div class="col-sm-2 justify-content-around align-items-center">
-                <img src="img/recycle.png" class="iconos-directorio" alt="ícono reciclado">
-                <p class="textoGris" >Suprarreciclados</p>
+            <div class="btn-container">
+                <button class="justify-content-center category-btn btn" onclick="filterSelection('telasSustentables')">
+                    <img src="img/planet-earth.png" class="iconos-directorio" alt="ícono planeta tierra">
+                    <p>Telas orgánicas</p>
+                </button>
             </div>
-            <div class="col-sm-2 justify-content-around align-items-center">
-                <img src="img/payment-method.png" class="iconos-directorio" alt="ícono modo de pago">
-                <p class="textoGris">Fairtrade</p>
+            <div class="btn-container">
+                <button class="justify-content-center category-btn btn" onclick="filterSelection('local')">
+                    <img src="img/hecho-local.png" class="iconos-directorio" alt="ícono reciclado">
+                    <p >Producto Local</p>
+                </button>
             </div>
-            <div class="col-sm-2 justify-content-around align-items-center">
-                <img src="img/knitted.png" class="iconos-directorio" alt="ícono hecho a mano">
-                <p class="textoGris">Hecho a Mano</p>
+            <div class="btn-container">
+                <button class="justify-content-center category-btn btn" onclick="filterSelection('etico')" >
+                    <img src="img/payment-method.png" class="iconos-directorio" alt="ícono modo de pago">
+                    <p>Ético</p>
+                </button>
             </div>
-            <div class="col-sm-2 justify-content-around align-items-center">
-                <img src="img/place.png" class="iconos-directorio"alt="ícono lugar">
-                <p class="textoGris">Hecho en Córdoba</p>
-            </div> 
-            <div class="col-sm-2 justify-content-around align-items-center">
-                <img src="img/plant-based.png" class="iconos-directorio" alt="ícono vegano">
-                <p class="textoGris">Vegano & Cruelty-Free</p>
+            <div class="btn-container">
+                <button class="justify-content-center category-btn btn" onclick="filterSelection('suprarreciclados')">
+                    <img src="img/upcycle.png" class="iconos-directorio" alt="ícono reciclado">
+                    <p >Suprarreciclados</p>
+                </button>
+            </div>
+            <div class="btn-container">
+                <button class="justify-content-center category-btn btn" onclick="filterSelection('segundaMano')">
+                    <img src="img/second-hand.png" class="iconos-directorio" alt="ícono vegano">
+                    <p>Segunda Mano</p>
+                </button>
+            </div>
+            <div class="btn-container">
+                <button class="justify-content-center category-btn btn" onclick="filterSelection('noBinarie')">
+                    <img src="img/genderless.png" class="iconos-directorio" alt="ícono vegano">
+                    <p>No Binarie</p>
+                </button>   
+            </div>
+            <div class="btn-container">
+                <button class="justify-content-center category-btn btn" onclick="filterSelection('tallesReales')">
+                    <img src="img/talles_reales.png" class="iconos-directorio" alt="ícono vegano">
+                    <p>Talles Reales</p>
+                </button>
+            </div>
+            <div class="btn-container">
+                <button class="justify-content-center category-btn btn" onclick="filterSelection('piezasUnicas')">
+                    <img src="img/piezas_unicas.png" class="iconos-directorio" alt="ícono vegano">
+                    <p>Piezas Únicas</p>
+                </button>
+            </div>
+            <div class="btn-container">
+                <button class="justify-content-center category-btn btn" onclick="filterSelection('MaterialesSustentables')">
+                    <img src="img/recyclable-materials.png" class="iconos-directorio" alt="ícono vegano">
+                    <p>Materiales sustentables</p>
+                </button>
             </div>
             <!--Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
+        </div>
+        <div class="all-categories btn-container">
+            <button class="justify-content-center category-btn btn" onclick="filterSelection('all')">
+                <img src="img/todo.png" class="iconos-directorio"alt="ícono lugar">
+                <p>Todos</p>
+            </button>
         </div>
     </div>
     </div>
@@ -85,37 +128,130 @@
 
     <!--MARCAS START-->
     <div class="card-deck">
-        <div class="card">
+        <h2 id="noResults">No hay marcas en esta categoría</h2>
+        <div class="card filterDiv segundaMano">
           <div class="card-body gray-gradient">
-            <img class="logosDirectorioCard" src="img/tomas_anouk.jpg" alt="Logo Tomas & Anouk">
-            <h4 class="card-title">Tomas & Anouk</h4>
-            <p class="card-text">Marca cordobesa que aglomera propuestas de prendas en todos los talles, y genderless</p>
-            <img class="iconosDirectorioCard" src="img/payment-method.png" alt="icono fairtrade">
+            <div class="logosDirectorioCard" style="background-image: url('img/che_miguelina.png');">     
+            </div>
+            <h4 class="card-title">Che Miguelina</h4>
+            <p class="card-text">Todas las prendas de Ché Miguelina están especialmente seleccionadas para que puedas darle una segunda oportunidad y la sientas como nuevas. ¡Primeras marcas nacionales e internacionales a un precio súper accesible!</p>
+            <div class="categoryLogos">
+                <img class="iconosDirectorioCard" src="img/second-hand.png" alt="icono segundaMano">
+            </div>
           </div>
         </div>
-        <div class="card gray-gradient">
+        <div class="card gray-gradient filterDiv segundaMano">
           <div class="card-body">
-            <img class="logosDirectorioCard" src="img/malabia.png" alt="Logo Malabia">
-            <h4 class="card-title">Malabia</h4>
-            <p class="card-text">Diseño cordobés, se centran en producción de conjuntos monocromáticos en telas bien sueltas.</p>
+            <div class="logosDirectorioCard" style="background-image: url('img/lo_mio_es_tuyo.png');"> 
+            </div>
+            <h4 class="card-title">Lo Mío es Tuyo</h4>
+            <p class="card-text">Lo Mío es Tuyo Lo Mío es Tuyo, una propuesta de moda circular en Córdoba. Una tienda de segunda mano donde vas a encontrar todo lo que necesitas para completar tu estilo.</p>
+            <div class="categoryLogos">
+                <img class="iconosDirectorioCard" src="img/second-hand.png" alt="icono segundaMano">
+            </div>
           </div>
-          <img class="iconosDirectorioCard" src="img/knitted.png" alt="icono hechoencordoba">
         </div>
-        <div class="card">
+        <div class="card filterDiv hechoMano suprarreciclados">
           <div class="card-body gray-gradient">
-              <img class="logosDirectorioCard" src="img/jacinta moro.png" alt="Logo Jacinta Moro">
+            <span class="logoContainer">
+                <div class="logosDirectorioCard" style="background-image: url('img/jacinta moro.png');"> 
+                </div>
+            </span>
             <h4 class="card-title">Jacinta Moro</h4>
             <p class="card-text">Marca cordobesa que personaliza camperas de jean, podes elegir la campera, el color, el talle, el bordado, la tela.</p>
-            <img class="iconosDirectorioCard" src="img/knitted.png" alt="icono hechoencordoba">
-            <img class="iconosDirectorioCard" src="img/recycle.png" alt="icono reciclado">
+            <div class="categoryLogos">
+                <img class="iconosDirectorioCard" src="img/knitted.png" alt="icono hechoencordoba">
+                <img class="iconosDirectorioCard" src="img/recycle.png" alt="icono reciclado">
+            </div>
           </div>
         </div>
+        <div class="card filterDiv tallesReales">
+          <div class="card-body gray-gradient">
+            <span class="logoContainer">
+                <img class="logosDirectorioCard" src="img/agus_xl.png" alt="Logo Agusxl">
+            </span>
+            <h4 class="card-title">Agusxl</h4>
+            <p class="card-text">Agusxl es un espacio en donde podés vivir la mejor experiencia de compra , tanto en atención como que las prendas realmente te queden bien y te puedas llevar lo que te gusta y no lo que te queda.</p>
+            <div class="categoryLogos">
+                <img class="iconosDirectorioCard" src="img/talles_reales.png" alt="icono local"> 
+            </div>
+          </div>
+        </div>
+        <div class="card gray-gradient filterDiv local etico noBinarie hechoMano">
+          <div class="card-body">
+            <span class="logoContainer">
+                <div class="logosDirectorioCard" style="background-image: url('img/dominio.jpeg');"> 
+                </div>
+                </span>
+            <h4 class="card-title">Conciencia Dominio</h4>
+            <p class="card-text">Ropa atractiva, ética y de calidad. Seleccionamos los mejores materiales y procesos para garantizar la calidad y durabilidad de prendas versátiles que te sirvan para realizar diferentes actividades.</p>
+            <div class="categoryLogos">
+                <img class="iconosDirectorioCard" src="img/hecho-local.png" alt="icono local">
+                <img class="iconosDirectorioCard" src="img/payment-method.png" alt="icono etico">
+                <img class="iconosDirectorioCard" src="img/genderless.png" alt="icono noBinarie">
+                <img class="iconosDirectorioCard" src="img/knitted.png" alt="icono hechoMano">
+            </div>
+          </div>
+        </div>
+        <div class="card filterDiv etico noBinarie tallesReales">
+          <div class="card-body gray-gradient">
+            <span class="logoContainer">
+                <div class="logosDirectorioCard" style="background-image: url('img/euforia.png');"> 
+                </div>
+            </span>
+            <h4 class="card-title">Euforia On Fire</h4>
+            <p class="card-text">Lenceria de diseño con variedad de talles y para todes.</p>
+            <div class="categoryLogos">
+                <img class="iconosDirectorioCard" src="img/payment-method.png" alt="icono etico">
+                <img class="iconosDirectorioCard" src="img/genderless.png" alt="icono noBinarie">
+                <img class="iconosDirectorioCard" src="img/talles_reales.png" alt="icono tallesReales">
+            </div>
+          </div>
+        </div>
+        <div class="card filterDiv etico noBinarie tallesReales hechoMano suprarreciclados">
+            <div class="card-body gray-gradient">
+                <span class="logoContainer">
+                    <div class="logosDirectorioCard" style="background-image: url('img/therapy.png');"> 
+                    </div>
+                </span>
+              <h4 class="card-title">Therapy</h4>
+              <p class="card-text">"Proyecto de moda circular que trabajamos desde el upcycling / suprareciclaje junto a mi hermana desde 2012, en Argentina y Alemania. 
+                Trabajamos con descartes, remanentes, dead stock de materiales y prendas de segunda mano y vintage -post industrial, pre y post consumer waste- los cuales reutilizamos para dar vida a nuevos productos.
+                Realizamos piezas únicas -one of a kind- apelando a la reducción de basura, de sobreproducción y consumo, así como a reforzar la identidad propia y la inclusividad planteando una alternativa al sistema lineal imperante."</p>
+              <div class="categoryLogos">
+                <img class="iconosDirectorioCard" src="img/payment-method.png" alt="icono etico">
+                <img class="iconosDirectorioCard" src="img/genderless.png" alt="icono noBinarie">
+                <img class="iconosDirectorioCard" src="img/talles_reales.png" alt="icono tallesReales">
+                <img class="iconosDirectorioCard" src="img/upcycle.png" alt="icono suprarreciclados">
+                <img class="iconosDirectorioCard" src="img/knitted.png" alt="icono hechoMano">
+              </div>
+            </div>
+          </div>
+          <div class="card filterDiv etico hechoMano local MaterialesSustentables">
+            <div class="card-body gray-gradient">
+                <span class="logoContainer">
+                    <div class="logosDirectorioCard" style="background-image: url('img/neera.png');"> 
+                    </div>
+                </span>
+              <h4 class="card-title">Neera Experiencias Textiles</h4>
+              <p class="card-text">"Este proyecto busca articular saberes ancestrales y diseño sostenible  en productos contemporáneos y reutilizables. No buscamos volver al origen, buscamos reinventar el presente hacia un mejor futuro. Queremos difundir la potencia de los tintes, pigmentos y fibras naturales, apostar al trabajo justo y en red confiando en las estéticas sustentables para el ambiente y para todxs nosotrxs."</p>
+              <div class="categoryLogos">
+                <img class="iconosDirectorioCard" src="img/payment-method.png" alt="icono etico">
+                <img class="iconosDirectorioCard" src="img/knitted.png" alt="icono hechoMano">
+                <img class="iconosDirectorioCard" src="img/hecho-local.png" alt="icono local">
+                <img class="iconosDirectorioCard" src="img/recyclable-materials.png" alt="icono tallesReales">
+              </div>
+            </div>
+          </div>
     </div>
     <!--MARCAS END-->
+    <div class='containerHR'>
+        <hr class="beautiful-line">
+    </div>
 
     <!--MAPA START-->
     <div>
-        <h2 class="textoSubtitulo flex">Explorá nuestro mapa para encontrar marcas en tu zona</h2>
+        <h2 class="directorioTitlo flex">Explorá nuestro mapa para encontrar marcas en tu zona</h2>
     </div>
 
     <div class="mapa flex">
@@ -128,22 +264,22 @@
 </main>
 
 <!------START FOOTER---------->
-<div class="container-fluid">
+<footer class="container-fluid">
     <ul class="footer flex">
+      <li><a href="mailto:core.alternativas@gmail.com" style="color:#A6C4C4">core.alternativas@gmail.com</a></li>
       <li> <a href="https://medium.com/@sustentabilidadconestilo" target="blank"><img class="logoFooter" src="img/medium logo.png" alt="Medium Logo"></a></li>   
       <li> <a href="https://www.instagram.com/sustentabilidadconestilo/" target="blank"><img class="logoFooter" src="img/instagram logo.png" alt="Instagram Logo"> </a></li>
   </ul>
-  <p class="textoSubtitulo">&copy;Sustentabilidad con Estilo 2021</p>
+  <p class="textoSubtitulo" style="text-align: end;">&copy;Sustentabilidad con Estilo 2021</p>
   </footer>
-</div>
   
 <!------END FOOTER---------->
 
-<svg height="100%" width="100%" id="svg" viewBox="0 0 1440 500" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><defs><linearGradient id="gradient"><stop offset="5%" stop-color="#faae7b88"></stop><stop offset="95%" stop-color="#ffffff88"></stop></linearGradient></defs><path d="M 0,500 C 0,500 0,166 0,166 C 137.06666666666666,136.39999999999998 274.1333333333333,106.79999999999998 422,121 C 569.8666666666667,135.20000000000002 728.5333333333333,193.20000000000002 900,208 C 1071.4666666666667,222.79999999999998 1255.7333333333333,194.39999999999998 1440,166 C 1440,166 1440,500 1440,500 Z" stroke="none" stroke-width="0" fill="url(#gradient)" class="transition-all duration-300 ease-in-out delay-150"></path><defs><linearGradient id="gradient"><stop offset="5%" stop-color="#faae7bff"></stop><stop offset="95%" stop-color="#ffffffff"></stop></linearGradient></defs><path d="M 0,500 C 0,500 0,333 0,333 C 129.06666666666666,312.8666666666667 258.1333333333333,292.7333333333333 406,289 C 553.8666666666667,285.2666666666667 720.5333333333333,297.93333333333334 896,308 C 1071.4666666666667,318.06666666666666 1255.7333333333333,325.5333333333333 1440,333 C 1440,333 1440,500 1440,500 Z" stroke="none" stroke-width="0" fill="url(#gradient)" class="transition-all duration-300 ease-in-out delay-150"></path></svg>
-
+<svg width="100%" height="100%" id="svg" viewBox="0 0 1440 500" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><defs><linearGradient id="gradient" x1="19%" y1="11%" x2="81%" y2="89%"><stop offset="5%" stop-color="#f1e4d488"></stop><stop offset="95%" stop-color="#ffffff88"></stop></linearGradient></defs><path d="M 0,500 C 0,500 0,166 0,166 C 61.37799043062202,207.21531100478467 122.75598086124404,248.43062200956936 235,226 C 347.24401913875596,203.56937799043064 510.3540669856459,117.49282296650719 622,111 C 733.6459330143541,104.50717703349281 793.8277511961722,177.5980861244019 867,195 C 940.1722488038278,212.4019138755981 1026.3349282296651,174.11483253588517 1124,160 C 1221.6650717703349,145.88516746411483 1330.8325358851675,155.94258373205741 1440,166 C 1440,166 1440,500 1440,500 Z" stroke="none" stroke-width="0" fill="url(#gradient)" class="transition-all duration-300 ease-in-out delay-150 path-0"></path><defs><linearGradient id="gradient" x1="19%" y1="11%" x2="81%" y2="89%"><stop offset="5%" stop-color="#f1e4d4ff"></stop><stop offset="95%" stop-color="#ffffffff"></stop></linearGradient></defs><path d="M 0,500 C 0,500 0,333 0,333 C 85.38755980861242,355.200956937799 170.77511961722485,377.40191387559804 272,370 C 373.22488038277515,362.59808612440196 490.2870813397129,325.5933014354067 585,323 C 679.7129186602871,320.4066985645933 752.0765550239236,352.22488038277515 835,364 C 917.9234449760764,375.77511961722485 1011.4066985645932,367.50717703349284 1114,359 C 1216.5933014354068,350.49282296650716 1328.2966507177034,341.7464114832536 1440,333 C 1440,333 1440,500 1440,500 Z" stroke="none" stroke-width="0" fill="url(#gradient)" class="transition-all duration-300 ease-in-out delay-150 path-1"></path></svg>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    
+<script src="index.js">
+</script>
 </body>
 </html>

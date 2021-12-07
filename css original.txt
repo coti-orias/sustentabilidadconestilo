@@ -25,11 +25,11 @@ body {
 }
 
 .textoSubtitulo {
-    color:  #FAAE7B;
+    color:  #CE6B00;
 }
 
 .cabeceras {
-    background-color: #FAAE7B;
+    background-color: #CE6B00;
     font-family: 'Playfair Display', serif;
 }
 
@@ -53,7 +53,7 @@ li 	{
 
 ul li:hover {
     display: block;
-    background-color:#FAAE7B;
+    background-color:#CE6B00;
     color: white;
     padding: 2px;
     transform: scale(1,1);
@@ -92,7 +92,7 @@ form {
   }
 
   .boton:hover {
-    background-color:#FAAE7B;
+    background-color:#CE6B00;
     color: white;
     border-radius: 8px;
   }
@@ -219,7 +219,7 @@ form {
  
   /* Estilos Contacto */
 .formColor {
-    background-image: linear-gradient(#CD8C79, #FAAE7B)
+    background-image: linear-gradient(#CD8C79, #CE6B00)
 } 
 
 .divFormContact {
