@@ -1,23 +1,25 @@
 /* Estilos NavBar */
 .navBar{
-    background-color:#F1E4D4;
+    background-color:#B7482C;
 }
 
 .menu{
     display:flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.menu a {
+.menu #myLinks a {
     position: relative; 
     text-decoration: none;
     padding: 4px;
-    color: black;
+    color: #F1E5D5;
     padding: 0px 10px;
-    font-size: 22px;
-    font-weight: 100;
+    font-size: 27px;
+    font-weight: 300;
 }
 
-a:hover, a:active, a:focus, a.active{
+#myLinks a:hover, #myLinks a:active, #myLinks a:focus, #myLinks a.active{
     text-decoration: none;
     color: #dbb990; 
 }
@@ -27,7 +29,7 @@ a:hover, a:active, a:focus, a.active{
 }
 
 .logo {
-    width: 115px;
+    width: 200px;
     margin-left: 40px;
 }
 .menu #myLinks {
@@ -37,6 +39,15 @@ a:hover, a:active, a:focus, a.active{
     display: flex;
     align-items: center; 
 }
+#socialLinks a img{
+    height: 40px;
+}
+#socialLinks{
+    padding-right: 5%;
+}
+.mobileMenu{
+    display: flex;
+}
 
   /*On mobile */
   @media only screen and (max-width: 768px) {
@@ -44,29 +55,35 @@ a:hover, a:active, a:focus, a.active{
         width: 90px;
         margin-left: 2%;
     }
+    .menu{
+        display:block;
+    }
     .menu #myLinks {
         display: none;
         text-align:left;
-        height: 100vh;
+        height: 70vh;
       }
-      .menu a {
+      .menu #socialLinks {
+        display: none;
+        justify-content: space-around;
+        height: 30vh;
+        width: 100%;
+      }
+      .menu #myLinks a {
         padding: 14px 16px;
         text-decoration: none;
-        font-size: 17px;
+        font-size: 35px;
         display: block;
       }
       .menu a.icon {
-        color: black;
+        color: #F1E5D5;
         display: block;
         position: absolute;
         right: 10px;
         top: 10px;
       }
-      .menu {
-        overflow: hidden;
-        position: relative;
+      .menu .mobileMenu{
         display: block;
-        text-align: left
       }
       .servicio-block{
         width: 100% !important;
@@ -104,6 +121,8 @@ main{
     border-radius: 10%;
     display: flex;
     flex-direction: column;
+    text-align: center;
+    align-items: center;
 }
 .categoryLogos{
     margin-top: auto;
@@ -443,6 +462,7 @@ hr.beautiful-line {
 
 .directorioTitlo{
     color: #b7482c;
+    text-align: center;
 }
 
 .btn-container{
