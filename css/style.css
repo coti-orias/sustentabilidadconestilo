@@ -112,28 +112,43 @@ main{
   justify-content: center;
   align-content: center; 
 }
+
 .card{
-    border-radius: 10%;
     border: none;
 }
+
 .card-body{
     height: 100%;
     border-radius: 10%;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    align-items: center;
+    padding: 0px;
+    justify-content:space-between;
+}
+.card-text{
+    padding: 7%;
+}
+.cardLowerSection{
+    background-color: #A6C4C4;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 .categoryLogos{
-    margin-top: auto;
-    align-self: end; 
+    display: flex;
+    align-items: center;
+    padding-right: 2%;
+}
+.card-icon{
+    width: 151px;
+    padding: 7%;
 }
 
 .iconos-directorio {
   width: 3vw; }
 
 .iconosDirectorioCard {
-  width: 30px; }
+  width: 35px; }
 
 @media screen and (max-width: 320px) {
   .iconos-directorio {
@@ -145,12 +160,9 @@ main{
 
 .logosDirectorioCard {
   width: 200px;
-  height:170px;
+  height:100px;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: white;
-  margin-bottom: 10px; 
-  border-radius: 25%;
 }
 
 .filterDiv{
@@ -523,10 +535,6 @@ hr.beautiful-line {
 
 .quote-center {
   width: 50vw; }
-
-.gray-gradient {
-  background-color: #f5f5f5;;
-}
 
 @media only screen and (max-width: 768px) {
   main{
