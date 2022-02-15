@@ -114,30 +114,29 @@ main{
 }
 
 .card{
-    border: none;
+    display: flex;
+    flex-direction: row;
+    color: #F1E4D4;
 }
-
+.card-img-top{
+    width: 30%;
+}
+.card-title{
+    font-family: 'Montserrat', sans-serif;
+}
 .card-body{
-    height: 100%;
-    border-radius: 10%;
     display: flex;
     flex-direction: column;
-    padding: 0px;
-    justify-content:space-between;
-}
-.card-text{
-    padding: 7%;
-}
-.cardLowerSection{
-    background-color: #A6C4C4;
-    width: 100%;
-    display: flex;
     justify-content: space-between;
 }
+.card-text{
+    font-weight: 100;
+} 
 .categoryLogos{
     display: flex;
     align-items: center;
     padding-right: 2%;
+    justify-content: end;
 }
 .card-icon{
     width: 151px;
@@ -159,17 +158,18 @@ main{
     width: 10vw; } }
 
 .logosDirectorioCard {
-  width: 200px;
-  height:100px;
+  width: 40%;
+  height:100%;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 .filterDiv{
     display: none;
 }
 .show{
-    display: block;
+    display: flex;
 }
 
 .styleThumbs {
@@ -261,10 +261,10 @@ h3 {
 
 .quote-text {
   color: black;
-  font-family: 'Playfair Display', serif;
-  font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
   text-align: center;
-  font-size: 1.87em; }
+  font-size: 1.80em; }
 
 @media screen and (max-width: 600px) {
   .quote-text {
@@ -513,6 +513,10 @@ hr.beautiful-line {
 #noResults.noresults{
     display:block;
 }
+.btn-green{
+    background-color: #1A4F47;
+    color: white;
+}
 
 /*.waves {
   background-image: url(/sustentabilidadconestilo/img/waves-svg.png);
@@ -557,5 +561,14 @@ hr.beautiful-line {
         min-width:30%;
         max-width: 30%;
         margin-bottom: 2%;
+    }
+    .show-mobile{
+        display:none;
+    }
+  }
+  /*If browser window is a mobile*/
+  @media only screen and (max-width: 767px) {
+    .show-desktop{
+        display: none;
     }
   }
